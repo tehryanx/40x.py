@@ -10,6 +10,8 @@ def read_in():
 urls = read_in()
 
 for url in urls:
+	if url == "":
+		continue
 	# remove trailing slash
 	url = url[:-1] if url[-1] == '/' else url
 	# target is the last element
